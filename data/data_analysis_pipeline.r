@@ -13,7 +13,7 @@ required_packages <- c('tidyverse', 'ggrepel')
 install_and_load(required_packages)
 
 # Load the data without converting strings to factors and prevent R from changing column names
-data <- read.csv('run_table.csv', stringsAsFactors = FALSE, check.names = FALSE)
+data <- read.csv('data/sorted_run_table.csv', stringsAsFactors = FALSE, check.names = FALSE)
 
 # Print number of rows after loading
 cat("Number of rows after loading data:", nrow(data), "\n")
